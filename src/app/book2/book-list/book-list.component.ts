@@ -26,5 +26,8 @@ export class BookListComponent implements OnInit {
     })
 
   }
+  clicked (book: Book): void {
+    this.currentBook = book;
+  }
 
 }

@@ -4,7 +4,12 @@
 
  
 <app-book-row *ngFor="let b of bookList"
-[book]="b"> </app-book-row> 
+[book]="b"
+(click)='clicked(b)'></app-book-row>
+
+<app-book-details *ngIf="currentBook" [book]="currentBook">
+
+</app-book-details>
 
 
 
